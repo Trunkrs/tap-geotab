@@ -35,5 +35,6 @@ class DeviceStatusInfoStream(GeotabStream):
     """Define custom stream."""
 
     name = "DeviceStatusInfo"
+    primary_keys: t.ClassVar[list[str]] = ["id"]
     replication_key = "toVersion"
     schema_filepath = SCHEMAS_DIR / "device_status_info.json"

@@ -21,6 +21,9 @@
     "isDeviceCommunicating": {
       "type": "boolean"
     },
+    "id": {
+      "type": "string"
+    },
     "isDriving": {
       "type": "boolean"
     },

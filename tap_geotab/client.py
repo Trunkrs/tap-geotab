@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import uuid
 from typing import Iterable
 
 from requests import Response
@@ -29,6 +30,8 @@ class GeotabStream(Stream):
     ) -> dict | None:
         new_row = row
         new_row['toVersion'] = next_token
+        if not hasattr(row, self.primary_keys[0]):
+            new_row[self.primary_keys[0]] = uuid.uuid4()
         return new_row
 
     def get_records(

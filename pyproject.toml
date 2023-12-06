@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tap-geotab"
-version = "1.0.2"
+version = "1.0.3"
 description = "`tap-geotab` is a Singer tap for Geotab, built with the Meltano Singer SDK."
 readme = "README.md"
 authors = ["Hidde Stokvis <hidde@trunkrs.nl>"]
