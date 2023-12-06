@@ -9,6 +9,9 @@ plugins:
   - name: "tap-geotab"
     namespace: "tap_geotab"
     pip_url: -e .
+    config:
+      flattening_enabled: true
+      flattening_max_depth: 1
     capabilities:
     - state
     - catalog
